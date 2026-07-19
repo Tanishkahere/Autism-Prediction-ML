@@ -1,65 +1,75 @@
 # 🩺 Autism Prediction System
 
-A Machine Learning-based web application that estimates the likelihood of **Autism Spectrum Disorder (ASD)** using AQ-10 screening questionnaire responses and patient information.
+<p align="center">
 
-The application provides an easy-to-use interface for early autism screening and presents the prediction along with confidence scores and recommendations.
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit)
+![License](https://img.shields.io/badge/Status-Completed-success)
 
-> **Note:** This application is intended only for educational and screening purposes. It is **not** a medical diagnosis tool.
+</p>
 
----
+An interactive **Machine Learning-based web application** that estimates the likelihood of **Autism Spectrum Disorder (ASD)** using the AQ-10 screening questionnaire and patient information.
 
-# Project Overview
-
-Autism Spectrum Disorder (ASD) is a neurodevelopmental condition where early identification can significantly improve access to support and intervention.
-
-This project combines Machine Learning with an interactive Streamlit web application to provide a quick autism screening experience based on behavioural questionnaire responses.
-
-The application allows users to:
-
-- Enter patient information
-- Answer AQ-10 screening questions
-- Receive an autism risk prediction
-- View prediction confidence
-- Review input summary
-- Get recommendations based on the prediction
+The application provides an intuitive interface for early autism screening, displaying prediction results, confidence scores, and recommendations.
 
 ---
 
-# Features
+# 🌐 Live Demo
 
-- Modern Streamlit web interface
-- Machine Learning based prediction
-- AQ-10 behavioural questionnaire
-- Patient information form
-- Prediction confidence score
-- Probability distribution chart
-- Assessment summary
-- Responsive UI
-- Professional dark theme
+### 🚀 Try the application here
+
+**https://autism-prediction-ml-f4baywucl4kmehcn4aajh3.streamlit.app**
 
 ---
 
-# Application Screenshots
+# 📖 Project Overview
 
-## Home Page
+Autism Spectrum Disorder (ASD) is a neurodevelopmental condition that affects communication, behaviour, and social interaction.
+
+Early screening can help individuals receive timely professional evaluation and intervention.
+
+This project leverages **Machine Learning** to analyse behavioural responses from the AQ-10 screening questionnaire along with patient information to estimate the likelihood of ASD.
+
+The trained model is deployed using **Streamlit**, allowing users to perform a quick screening through a modern web interface.
+
+---
+
+# ✨ Features
+
+- 🧠 Machine Learning based autism risk prediction
+- 📋 AQ-10 behavioural screening questionnaire
+- 👤 Patient demographic information
+- 📊 Prediction confidence score
+- 📈 Probability distribution chart
+- 📄 Assessment summary
+- 💡 Recommendation section
+- 🌙 Modern dark-themed Streamlit interface
+- 🌐 Live deployed application
+
+---
+
+# 🖼️ Application Screenshots
+
+## 🏠 Home Page
 
 ![Home](images/images-home.png)
 
 ---
 
-## Screening Questionnaire
+## 📝 Screening Questionnaire
 
 ![Questionnaire](images/images-questionnaire.png)
 
 ---
 
-## Prediction Result
+## 📊 Prediction Result
 
 ![Prediction](images/images-prediction.png)
 
 ---
 
-# Tech Stack
+# 🛠️ Tech Stack
 
 ### Programming Language
 
@@ -85,35 +95,65 @@ The application allows users to:
 
 ---
 
-# Project Structure
+# 📂 Project Structure
 
 ```text
 Autism-Prediction-ML/
 │
 ├── app.py
-├── requirements.txt
 ├── README.md
+├── requirements.txt
 ├── .gitignore
 │
 ├── data/
 │   └── autism_screening.csv
 │
+├── images/
+│   ├── images-home.png
+│   ├── images-questionnaire.png
+│   └── images-prediction.png
+│
 ├── models/
 │   └── autism_app_model.pkl
 │
-├── notebooks/
-│   ├── autism_prediction.ipynb
-│   └── deployment_model.ipynb
-│
-└── images/
-    ├── images-home.png
-    ├── images-questionnaire.png
-    └── images-prediction.png
+└── notebooks/
+    ├── autism_prediction.ipynb
+    └── deployment_model.ipynb
 ```
 
 ---
 
-# Installation
+# 📊 Dataset
+
+The model was trained on an Autism Screening dataset containing:
+
+- AQ-10 questionnaire responses
+- Age
+- Gender
+- Family history of autism
+- Jaundice history
+- Previous screening history
+
+Target Variable:
+
+- ASD Classification
+
+---
+
+# 🤖 Machine Learning Workflow
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Selection
+- Data Preprocessing
+- Model Training
+- Model Evaluation
+- Model Serialization using Joblib
+- Streamlit Deployment
+
+---
+
+# 🚀 Installation
 
 Clone the repository
 
@@ -121,7 +161,7 @@ Clone the repository
 git clone https://github.com/Tanishkahere/Autism-Prediction-ML.git
 ```
 
-Move into the project
+Move into the project directory
 
 ```bash
 cd Autism-Prediction-ML
@@ -133,64 +173,42 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
----
-
-# Run the Application
+Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will start locally in your browser.
-
 ---
 
-# Dataset
+# 🔮 Future Improvements
 
-The model is trained using an Autism Screening dataset containing:
-
-- AQ-10 screening responses
-- Age
-- Gender
-- Family history
-- Jaundice history
-- Previous screening history
-
----
-
-# Machine Learning Model
-
-The final prediction model was trained using Scikit-learn and exported using Joblib for deployment within the Streamlit application.
-
-Model file:
-
-```
-models/autism_app_model.pkl
-```
-
----
-
-# Future Improvements
-
-- Deploy the application on Streamlit Cloud
-- Improve UI with interactive charts
-- Add multilingual support
-- Enhance model performance with additional data
-- Store screening history
 - PDF report generation
 - User authentication
+- Multi-language support
+- Improved model performance with additional data
+- Cloud database integration
+- Doctor dashboard
+- Mobile-friendly interface
 
 ---
 
-# Disclaimer
+# ⚠️ Disclaimer
 
-This application is intended solely for educational purposes and preliminary autism screening.
+This project is intended **only for educational purposes and preliminary autism screening.**
 
 It **does not provide a medical diagnosis** and should not replace evaluation by qualified healthcare professionals.
 
 ---
 
-# Author
+# 👩‍💻 Author
 
 **Tanishka Singh**
 
+Electronics and Communication Engineering (AI)
+
+Indira Gandhi Delhi Technical University for Women (IGDTUW)
+
+---
+
+⭐ If you found this project interesting, consider giving the repository a **Star**.
