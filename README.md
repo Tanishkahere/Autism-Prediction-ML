@@ -1,118 +1,196 @@
-# 🧠 Autism Prediction System using Machine Learning
+# 🩺 Autism Prediction System
 
-## 📌 Project Overview
+A Machine Learning-based web application that estimates the likelihood of **Autism Spectrum Disorder (ASD)** using AQ-10 screening questionnaire responses and patient information.
 
-This project predicts the likelihood of Autism Spectrum Disorder (ASD) using the AQ-10 screening questionnaire and demographic information. Multiple Machine Learning models were trained and compared, and the best-performing model was deployed using Streamlit to provide real-time predictions through an interactive web application.
+The application provides an easy-to-use interface for early autism screening and presents the prediction along with confidence scores and recommendations.
 
----
-
-## 🚀 Features
-
-- Data Cleaning and Preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Multiple Machine Learning Models
-  - Logistic Regression
-  - Decision Tree
-  - Random Forest
-  - K-Nearest Neighbors (KNN)
-  - Support Vector Machine (SVM)
-- Model Evaluation
-- Streamlit Web Application
-- Real-time Autism Prediction
+> **Note:** This application is intended only for educational and screening purposes. It is **not** a medical diagnosis tool.
 
 ---
 
-## 📊 Dataset
+# Project Overview
 
-The dataset contains:
+Autism Spectrum Disorder (ASD) is a neurodevelopmental condition where early identification can significantly improve access to support and intervention.
 
-- AQ-10 Screening Questions (A1–A10)
-- Age
-- Gender
-- Jaundice at Birth
-- Family History of Autism
-- Previous Screening App Usage
+This project combines Machine Learning with an interactive Streamlit web application to provide a quick autism screening experience based on behavioural questionnaire responses.
 
-Target Variable:
+The application allows users to:
 
-- Class/ASD
+- Enter patient information
+- Answer AQ-10 screening questions
+- Receive an autism risk prediction
+- View prediction confidence
+- Review input summary
+- Get recommendations based on the prediction
 
 ---
 
-## 🛠️ Technologies Used
+# Features
+
+- Modern Streamlit web interface
+- Machine Learning based prediction
+- AQ-10 behavioural questionnaire
+- Patient information form
+- Prediction confidence score
+- Probability distribution chart
+- Assessment summary
+- Responsive UI
+- Professional dark theme
+
+---
+
+# Application Screenshots
+
+## Home Page
+
+![Home](images/images-home.png)
+
+---
+
+## Screening Questionnaire
+
+![Questionnaire](images/images-questionnaire.png)
+
+---
+
+## Prediction Result
+
+![Prediction](images/images-prediction.png)
+
+---
+
+# Tech Stack
+
+### Programming Language
 
 - Python
+
+### Machine Learning
+
+- Scikit-learn
+- Joblib
+
+### Data Processing
+
 - Pandas
 - NumPy
-- Scikit-learn
+
+### Web Framework
+
 - Streamlit
-- Joblib
-- Matplotlib
-- Seaborn
+
+### Visualization
+
+- Streamlit Charts
 
 ---
 
-## 📈 Model Performance
+# Project Structure
 
-| Model | Accuracy |
-|--------|----------|
-| Logistic Regression | 100% |
-| Decision Tree | 89.36% |
-| Random Forest | 97.16% |
-| KNN | 87.94% |
-| SVM | 100% |
-
----
-
-## 📁 Project Structure
-
-```
+```text
 Autism-Prediction-ML/
 │
-├── data/
-├── models/
-├── notebooks/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
+│
+├── data/
+│   └── autism_screening.csv
+│
+├── models/
+│   └── autism_app_model.pkl
+│
+├── notebooks/
+│   ├── autism_prediction.ipynb
+│   └── deployment_model.ipynb
+│
+└── images/
+    ├── images-home.png
+    ├── images-questionnaire.png
+    └── images-prediction.png
 ```
 
 ---
 
-## ▶️ How to Run
+# Installation
 
-### Clone the repository
+Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Autism-Prediction-ML.git
+git clone https://github.com/Tanishkahere/Autism-Prediction-ML.git
 ```
 
-### Install dependencies
+Move into the project
+
+```bash
+cd Autism-Prediction-ML
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the application
+---
+
+# Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
----
-
-## ⚠️ Disclaimer
-
-This application is intended for educational purposes only and should not be used as a substitute for professional medical diagnosis.
+The application will start locally in your browser.
 
 ---
 
-## 👩‍💻 Author
+# Dataset
+
+The model is trained using an Autism Screening dataset containing:
+
+- AQ-10 screening responses
+- Age
+- Gender
+- Family history
+- Jaundice history
+- Previous screening history
+
+---
+
+# Machine Learning Model
+
+The final prediction model was trained using Scikit-learn and exported using Joblib for deployment within the Streamlit application.
+
+Model file:
+
+```
+models/autism_app_model.pkl
+```
+
+---
+
+# Future Improvements
+
+- Deploy the application on Streamlit Cloud
+- Improve UI with interactive charts
+- Add multilingual support
+- Enhance model performance with additional data
+- Store screening history
+- PDF report generation
+- User authentication
+
+---
+
+# Disclaimer
+
+This application is intended solely for educational purposes and preliminary autism screening.
+
+It **does not provide a medical diagnosis** and should not replace evaluation by qualified healthcare professionals.
+
+---
+
+# Author
 
 **Tanishka Singh**
 
-Electronics and Communication Engineering (AI)
-
-IGDTUW
