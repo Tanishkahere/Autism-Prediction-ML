@@ -207,7 +207,7 @@ It **does not provide a medical diagnosis** and should not replace evaluation by
 
 Electronics and Communication Engineering (AI)
 
-Indira Gandhi Delhi Technical University 
+Indira Gandhi Delhi Technical Universit
 
 ---
 
