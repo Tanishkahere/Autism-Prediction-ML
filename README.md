@@ -205,7 +205,7 @@ It **does not provide a medical diagnosis** and should not replace evaluation by
 
 **Tanishka Singh**
 
-Electronics and Commun  
+Electronics and Commu  
 
   
 
