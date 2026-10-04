@@ -204,7 +204,7 @@ It **does not provide a medical diagnosis** and should not replace evaluation by
 # 👩‍💻 Author
 
 **Tanishka Singh**
-I
+IG
 
 
   
